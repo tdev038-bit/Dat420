@@ -1,0 +1,47 @@
+[
+  {
+    "id": 101,
+    "name": "Aarav",
+    "age": 23,
+    "city": "Mumbai",
+    "bio": "Coffee, cricket, and clean code.",
+    "photo": "https://picsum.photos/seed/aarav/800/1100",
+    "likesYou": true
+  },
+  {
+    "id": 102,
+    "name": "Ira",
+    "age": 22,
+    "city": "Delhi",
+    "bio": "Design student. I draw, I hike, I bake.",
+    "photo": "https://picsum.photos/seed/ira/800/1100",
+    "likesYou": false
+  },
+  {
+    "id": 103,
+    "name": "Kabir",
+    "age": 24,
+    "city": "Bengaluru",
+    "bio": "Full\u2011stack dev. Ask me about React.",
+    "photo": "https://picsum.photos/seed/kabir/800/1100",
+    "likesYou": true
+  },
+  {
+    "id": 104,
+    "name": "Meera",
+    "age": 21,
+    "city": "Pune",
+    "bio": "Books, badminton, and beaches.",
+    "photo": "https://picsum.photos/seed/meera/800/1100",
+    "likesYou": false
+  },
+  {
+    "id": 105,
+    "name": "Zoya",
+    "age": 23,
+    "city": "Kolkata",
+    "bio": "Photographer. Street + portraits.",
+    "photo": "https://picsum.photos/seed/zoya/800/1100",
+    "likesYou": true
+  }
+]

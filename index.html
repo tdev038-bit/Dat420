@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>SwipeLite — Demo Dating App</title>
+  <meta name="description" content="A lightweight demo dating app you can host on GitHub Pages and use on iPad." />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">💘 SwipeLite</div>
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button class="tab active" data-view="swipe" aria-selected="true">Discover</button>
+      <button class="tab" data-view="matches" aria-selected="false">Matches</button>
+      <button class="tab" data-view="profile" aria-selected="false">My Profile</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container">
+    <!-- Swipe View -->
+    <section id="view-swipe" class="view active" aria-labelledby="Discover">
+      <div id="card-stack" class="card-stack" aria-live="polite">
+        <!-- Cards injected here -->
+      </div>
+      <div class="actions">
+        <button id="btn-dislike" class="btn circle" aria-label="Pass">✖</button>
+        <button id="btn-like" class="btn circle" aria-label="Like">❤</button>
+      </div>
+      <p class="hint">Tip: swipe left/right or use buttons.</p>
+    </section>
+
+    <!-- Matches View -->
+    <section id="view-matches" class="view" aria-labelledby="Matches">
+      <h2>Your Matches</h2>
+      <ul id="matches-list" class="list"></ul>
+      <p class="muted">This is a demo — matches are local to your device.</p>
+    </section>
+
+    <!-- Profile View -->
+    <section id="view-profile" class="view" aria-labelledby="My Profile">
+      <h2>My Profile</h2>
+      <form id="profile-form" class="form">
+        <label>
+          Name
+          <input type="text" id="me-name" placeholder="Your name" required>
+        </label>
+        <label>
+          Age
+          <input type="number" id="me-age" min="18" max="99" placeholder="22" required>
+        </label>
+        <label>
+          Bio
+          <textarea id="me-bio" rows="3" placeholder="Tell people about you..."></textarea>
+        </label>
+        <label>
+          Photo URL
+          <input type="url" id="me-photo" placeholder="https://picsum.photos/seed/me/600/800">
+        </label>
+        <button class="btn primary" type="submit">Save Profile</button>
+      </form>
+      <details class="muted">
+        <summary>How this works</summary>
+        <p>Your profile and likes are saved privately in <strong>localStorage</strong> on this device. There’s no server or login in this demo.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="https://github.com" target="_blank" rel="noopener">Host on GitHub Pages</a>
+    <span>•</span>
+    <a href="#" id="reset-data">Reset demo data</a>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
